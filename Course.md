@@ -6,6 +6,11 @@
 ddev excc vendor/bin/phpunit
 ```
 
+## Options
+
+- "--help": Show all options
+- "--testdox": Show tests in a human readable format
+
 ## How tests work
 
 - PHP-Unit looks automatically for the phpunit.xml.dist file
@@ -18,3 +23,9 @@ ddev excc vendor/bin/phpunit
 
 - assertEquals internally use "=="
 - assertSame internally use "==="
+
+## Annotations
+
+```php
+#[DataProvider('functionName')]
+```
